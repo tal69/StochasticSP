@@ -1,0 +1,12 @@
+# SP_capacity_and_location
+Code and data accompanied the article "The stochastic service points location and capacity problem" 
+
+1) To run the experiment reported in Section 3.3, run python3 Single_SP.py; the output is stored in a file "res.csv."
+2) To generate the latex graph presented in Section 3.4 and calculate the maximum error of the 10 piecewise linear approximation, run python3 CreateAcuracyGraph.py. The output is sent to the standard io stream (aka the screen).
+3) To run the experiment reported in Section 5.1, run python3 SPLoc_v3.py. The output is appended to the file "Results_SP.csv."
+4) To run the experiment reported in Section 5.2, run python3 SPLoc_v3_huge.py. The output is appended to the file "Results_SP.csv."
+
+Dependencies 
+CreateAcuracyGraph.py needs Single_SP.py to run
+SPLoc_v3.py needs Single_SP.py, sp_cover.mod,and sp_loc_cap.mod to run 
+SPLoc_v3_huge.py needs Single_SP.py and sp_loc_cap.mod to run 
